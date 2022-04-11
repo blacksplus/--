@@ -2,7 +2,7 @@
 typedef int ElementType;
 
 struct Node;
-typedef struct Node *PtrToNode;
+typedef struct Node* PtrToNode;
 typedef PtrToNode List;
 typedef PtrToNode Position;
 
@@ -29,3 +29,20 @@ struct Node
 	ElementType Element;
 	Position Next;
 };
+
+
+
+
+
+struct DoubleNode  //双向链表
+{
+	Position Pior, Next;
+};
+//双向链表的插入
+void InsertDoubleNode(List L, int i, ElementType X);
+//双向链表的删除
+void DeleteDoubleNode(List L, int i);
+//线性表的合并
+void UnionList(List L1, List L2);
+//有序列表双指针法
+void UnionListTwo(List L1, List L2);

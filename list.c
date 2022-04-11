@@ -226,3 +226,20 @@ void CreateList_H(List L, int i)
 		i--;
 	}
 }
+void InsertDoubleNode(List L, int i, ElementType X)
+{
+	
+}
+void UnionList(List L1, List L2)
+{
+	//通过循环比较插入
+}
+
+List UnionListTwo(List L1, List L2)
+{
+	//通过创建一个新表，分别对两个表设置指针，
+	//从头开始比较两个数，较小的放入新表
+	//直到一个表放完剩下的再全部放入
+	//如果遇到相等的就取其中一个，地址再同时加一
+	//前提要两个表都有序，且任意一个都不为空
+}
